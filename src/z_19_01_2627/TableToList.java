@@ -7,12 +7,12 @@ import java.util.Random;
 
 public class TableToList {
     public static void main(String[] args) {
-        Random generator = new Random();
-        int randomInt = generator.nextInt(101); // losuje od 0-100, 101 jest wartoscia graniczna
+        Random random = new Random();
+        int randomInt = random.nextInt(101); // losuje od 0-100, 101 jest wartoscia graniczna
 
         int[] tablica = new int[10]; //domyslne wartosci 0
         for (int i = 0; i < tablica.length; i++) {
-            tablica[i] = generator.nextInt(101);
+            tablica[i] = random.nextInt(101);
             System.out.print(tablica[i] + " ");
         }
 

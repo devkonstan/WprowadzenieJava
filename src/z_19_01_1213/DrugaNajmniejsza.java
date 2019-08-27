@@ -16,7 +16,8 @@ public class DrugaNajmniejsza {
         System.out.println("\nCreated array: "); // wyświetlamy utworzoną tablicę
         printArray(values);
 
-        System.out.println("\nSorted array: "); // pozwala nam na manualne porównanie, czy uzyskany wynik to faktycznie druga najmniejsza wartość
+        System.out.println("\nSorted array: ");
+        // pozwala nam na manualne porównanie, czy uzyskany wynik to faktycznie druga najmniejsza wartość
         printArray(values
                 .stream()
                 .sorted()

@@ -6,7 +6,6 @@ public class Browser {
     private Stack<WebSite> strony = new Stack<>();
 
     public void newSite(WebSite strona) {
-
         System.out.println("otwieram stronę: " + strony.push(strona).getSiteURL());
     }
 
@@ -15,6 +14,7 @@ public class Browser {
         System.out.println("poprzednia strona: " + strony.peek().getSiteURL()); //podglada tylko
     }
 
+    // zasadniczo to samo co powyzsza metoda
     public void newbackSite() {
         strony.pop().getSiteURL();
         System.out.println("poprzednia strona: " + strony.peek().getSiteURL());
