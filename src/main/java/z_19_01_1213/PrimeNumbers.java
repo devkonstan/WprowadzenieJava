@@ -17,7 +17,7 @@ public class PrimeNumbers {
         List<Integer> primeNumbers = new ArrayList<>();
         for (int i = 2; i < range; i++) {
             for (int j = 2; j <= i; j++) {
-                if (i % j == 0 && i != j) {
+                if (i % j == 0 && i != j) { //j musi przeiterowac do rownowartosci i => pewnosc, ze jest liczba pierwsza
                     break;
                 } else if (j < i) {
                     continue;

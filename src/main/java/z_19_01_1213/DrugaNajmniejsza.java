@@ -1,6 +1,7 @@
 package z_19_01_1213;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Random;
 import java.util.stream.Collectors;
@@ -23,16 +24,16 @@ public class DrugaNajmniejsza {
                 .sorted()
                 .collect(Collectors.toList()));
 
+        System.out.println();
 
-        int i = new ArrayList<>(values)
+        int i = new HashSet<>(values)
                 .stream()
                 .sorted()
                 .collect(Collectors.toList()).get(1);
         System.out.println("2nd: "+i);
 
-        System.out.println("\nSecond min value: ");
         int min2 = findMin(values);
-        System.out.println(min2);
+        System.out.println("Second min value: "+min2);
 
     }
 
